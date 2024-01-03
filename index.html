@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+
+    <!-- Link Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="wrapper w-screen h-screen grid place-items-center">
+
+        <p class="game-info absolute top-12 left-[50%] translate-x-[-50%] bg-[#ffffff26] border-[#ffffff40] border-solid border rounded-2xl py-2 px-12 text-center w-[80%] max-w-[16rem]"></p>
+
+        <div class="tic-tac-toe bg-[#ffffff11] border-[#ffffff40] border-solid border rounded-2xl w-[90%] max-w-[25rem] p-8 grid grid-cols-3 aspect-square shadow-[#ffffff46]">
+
+            <div class="box relative aspect-square cursor-pointer w-[100%] text-[3rem] flex justify-center items-center border-r-2 border-b-2 border-solid border-white"></div>
+            <div class="box relative aspect-square cursor-pointer w-[100%] text-[3rem] flex justify-center items-center border-r-2 border-b-2 border-solid border-white"></div>
+            <div class="box relative aspect-square cursor-pointer w-[100%] text-[3rem] flex justify-center items-center border-b-2 border-solid border-white"></div>
+            <div class="box relative aspect-square cursor-pointer w-[100%] text-[3rem] flex justify-center items-center border-r-2 border-b-2 border-solid border-white"></div>
+            <div class="box relative aspect-square cursor-pointer w-[100%] text-[3rem] flex justify-center items-center border-r-2 border-b-2 border-solid border-white"></div>
+            <div class="box relative aspect-square cursor-pointer w-[100%] text-[3rem] flex justify-center items-center border-b-2 border-solid border-white"></div>
+            <div class="box relative aspect-square cursor-pointer w-[100%] text-[3rem] flex justify-center items-center border-r-2 border-solid border-white"></div>
+            <div class="box relative aspect-square cursor-pointer w-[100%] text-[3rem] flex justify-center items-center border-r-2 border-solid border-white"></div>
+            <div class="box relative aspect-square cursor-pointer w-[100%] text-[3rem] flex justify-center items-center"></div>
+
+        </div>
+
+        <button class="btn bg-[#ffffff26] border-[#ffffff40] border-solid border rounded-2xl cursor-pointer text-[] absolute bottom-12 left-[50%] translate-x-[-50%] py-2 px-12 w-[60%] max-w-[12rem] flex justify-center items-center">New Game</button>
+
+    </div>
+
+
+    <script type="module" src="script.js"></script>
+    
+</body>
+</html>

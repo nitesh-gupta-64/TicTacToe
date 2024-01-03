@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,*::before,*::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+    color: aliceblue;
+}
+
+.wrapper
+{
+    background-color: #000000;
+    opacity: 1;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #000000 60px ), repeating-linear-gradient( #8d000055, #8d0000 );
+}
+
+.tic-tac-toe
+{
+    box-shadow: 20px 20px 20px 2px #000000;
+}
+
+.btn
+{
+    display: none;
+}
+
+.btn.active
+{
+    display: flex;
+}
+
+.win:nth-child(1)
+{
+    border-radius: 2px;
+    animation: blinkingBackground1 ease-in-out 2s infinite;
+}
+
+@keyframes blinkingBackground1 {
+    0%		{ background-color: #00ff004d;}
+    25%		{ background-color: #1056c04d;}
+    50%		{ background-color: #ef0a194d;}
+    75%		{ background-color: #2548784d;}
+    100%	{ background-color: #00ff004d;}
+}
+
+.win:nth-child(2)
+{
+    border-radius: 2px;
+    animation: blinkingBackground2 ease-in-out 2s infinite;
+}
+
+@keyframes blinkingBackground2 {
+    0%		{ background-color: #1056c04d;}
+    25%		{ background-color: #ef0a194d;}
+    50%		{ background-color: #2548784d;}
+    75%	    { background-color: #04a1d54d;}
+    100%	{ background-color: #1056c04d;}
+}
+
+.win:nth-child(3)
+{
+    border-radius: 2px;
+    animation: blinkingBackground3 ease-in-out 2s infinite;
+}
+
+@keyframes blinkingBackground3 {
+    0%		{ background-color: #2548784d;}
+    25%	    { background-color: #04a1d54d;}
+    50% 	{ background-color: #00ff004d;}
+    75%	    { background-color: #1056c04d;}
+    100%	{ background-color: #2548784d;}
+}
+
+.win:nth-child(4)
+{
+    border-radius: 2px;
+    animation: blinkingBackground4 ease-in-out 2s infinite;
+}
+
+@keyframes blinkingBackground4 {
+    0%		{ background-color: #1056c04d;}
+    25%		{ background-color: #ef0a194d;}
+    50%		{ background-color: #2548784d;}
+    75%	    { background-color: #04a1d54d;}
+    100%	{ background-color: #1056c04d;}
+}
+
+.win:nth-child(5)
+{
+    border-radius: 2px;
+    animation: blinkingBackground5 ease-in-out 2s infinite;
+}
+
+@keyframes blinkingBackground5 {
+    0%		{ background-color: #ef0a194d;}
+    25%		{ background-color: #2548784d;}
+    50%	    { background-color: #04a1d54d;}
+    75% 	{ background-color: #00ff004d;}
+    100%	{ background-color: #ef0a194d;}
+}
+
+.win:nth-child(6)
+{
+    border-radius: 2px;
+    animation: blinkingBackground6 ease-in-out 2s infinite;
+}
+
+@keyframes blinkingBackground6 {
+    0%		{ background-color: #00ff004d;}
+    25%		{ background-color: #1056c04d;}
+    50%		{ background-color: #ef0a194d;}
+    75%		{ background-color: #2548784d;}
+    100%	{ background-color: #00ff004d;}
+}
+
+.win:nth-child(7)
+{
+    border-radius: 2px;
+    animation: blinkingBackground7 ease-in-out 2s infinite;
+}
+
+@keyframes blinkingBackground7 {
+    0%	    { background-color: #04a1d54d;}
+    25% 	{ background-color: #00ff004d;}
+    50%	    { background-color: #1056c04d;}
+    75%	    { background-color: #ef0a194d;}
+    100%	{ background-color: #04a1d54d;}
+}
+
+.win:nth-child(8)
+{
+    border-radius: 2px;
+    animation: blinkingBackground8 ease-in-out 2s infinite;
+}
+
+@keyframes blinkingBackground8 {
+    0%		{ background-color: #00ff004d;}
+    25%		{ background-color: #1056c04d;}
+    50%		{ background-color: #ef0a194d;}
+    75%		{ background-color: #2548784d;}
+    100%	{ background-color: #00ff004d;}
+}
+
+.win:nth-child(9)
+{
+    border-radius: 2px;
+    animation: blinkingBackground9 ease-in-out 2s infinite;
+}
+
+@keyframes blinkingBackground9 {
+    0%		{ background-color: #1056c04d;}
+    25%		{ background-color: #ef0a194d;}
+    50%		{ background-color: #2548784d;}
+    75%	    { background-color: #04a1d54d;}
+    100%	{ background-color: #1056c04d;}
+}
