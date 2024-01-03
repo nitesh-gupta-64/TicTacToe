@@ -30,6 +30,7 @@ function initGame()
     newGameBtn.classList.remove("active");
     gameInfo.innerText = `Current Player - ${currentPlayer}`;
     tictactoe.classList.add("active");
+    tictactoe.classList.remove("winner");
 }
 
 initGame();
@@ -101,6 +102,7 @@ function checkGameOver()
         gameInfo.innerText = `Player - ${answer} Wins`;
         newGameBtn.classList.add("active");
         tictactoe.classList.remove("active");
+        tictactoe.classList.add("winner");
         return;
     }
 

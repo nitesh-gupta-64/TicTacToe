@@ -18,7 +18,7 @@
     background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #000000 60px ), repeating-linear-gradient( #8d000055, #8d0000 );
 }
 
-.tic-tac-toe
+.tic-tac-toe, .btn, .game-info
 {
     box-shadow: 20px 20px 20px 2px #000000;
 }
@@ -40,6 +40,11 @@
   40%, 60% {
     transform: translateX(5px);
   }
+}
+
+.tic-tac-toe.winner 
+{
+    animation: shakeAnimation 5s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
 }
 
 
