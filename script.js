@@ -37,6 +37,8 @@ initGame();
 
 boxes.forEach((box, index) => {
     box.addEventListener("click", () => {
+        newGameBtn.innerText = "Reset"
+        newGameBtn.classList.add("active");
         handleClick(index);
     })
 });
@@ -100,6 +102,8 @@ function checkGameOver()
     if(answer !== "")
     {
         gameInfo.innerText = `Player - ${answer} Wins`;
+        newGameBtn.innerText = "New Game";
+        newGameBtn.classList.remove("active");
         newGameBtn.classList.add("active");
         tictactoe.classList.remove("active");
         tictactoe.classList.add("winner");
@@ -115,6 +119,8 @@ function checkGameOver()
     if(fillCount === 9)
     {
         gameInfo.innerText = "Game Tied !";
+        newGameBtn.classList.remove("active");
+        newGameBtn.innerText = "New Game";
         newGameBtn.classList.add("active");
         tictactoe.classList.remove("active");
     }
