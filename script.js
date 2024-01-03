@@ -1,6 +1,7 @@
 const gameInfo = document.querySelector(".game-info");
 const boxes = document.querySelectorAll(".box");
 const newGameBtn = document.querySelector(".btn");
+const tictactoe = document.querySelector(".tic-tac-toe");
 
 let currentPlayer;
 let gameGrid;
@@ -28,6 +29,7 @@ function initGame()
 
     newGameBtn.classList.remove("active");
     gameInfo.innerText = `Current Player - ${currentPlayer}`;
+    tictactoe.classList.add("active");
 }
 
 initGame();
@@ -96,8 +98,9 @@ function checkGameOver()
 
     if(answer !== "")
     {
-        gameInfo.innerText = `Player - ${answer} Wins`
+        gameInfo.innerText = `Player - ${answer} Wins`;
         newGameBtn.classList.add("active");
+        tictactoe.classList.remove("active");
         return;
     }
 
@@ -109,7 +112,8 @@ function checkGameOver()
 
     if(fillCount === 9)
     {
-        gameInfo.innerText = "Game Tied !"
+        gameInfo.innerText = "Game Tied !";
         newGameBtn.classList.add("active");
+        tictactoe.classList.remove("active");
     }
 }
